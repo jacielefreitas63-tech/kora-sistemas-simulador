@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kora | Sistemas Personalizados — páginas interativas, planilhas inteligentes e organização operacional com orçamento instantâneo via WhatsApp.">
+  <title>Kora | Sistemas Personalizados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =====================================================================
+       1. BARRA DE NAVEGAÇÃO SUPERIOR
+       ===================================================================== -->
+  <nav class="navbar" aria-label="Navegação principal">
+    <div class="container nav-conteudo">
+      <a href="#" class="marca">Kora<span> | Sistemas Personalizados</span></a>
+      <ul class="nav-links">
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#simulador">Simulador</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- =====================================================================
+       2. HERO / APRESENTAÇÃO EXECUTIVA
+       ===================================================================== -->
+  <header class="hero">
+    <div class="container">
+      <span class="badge">Kora • Soluções Digitais Sob Medida</span>
+      <h1>Sistemas personalizados e organização digital para o seu negócio render mais</h1>
+      <p>
+        Páginas interativas, planilhas inteligentes e estruturação de fluxos comerciais
+        para quem quer ganhar agilidade, clareza e um atendimento muito mais profissional.
+      </p>
+      <div class="hero-acoes">
+        <a href="#simulador" class="btn-principal">Simular meu pacote</a>
+        <a href="#como-funciona" class="btn-secundario">Entender como funciona</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       3. DIFERENCIAIS DE VALOR
+       ===================================================================== -->
+  <section class="diferenciais container" aria-label="Principais benefícios">
+    <article class="card-info">
+      <strong>Orçamento na Hora</strong>
+      <span>Cálculo transparente em tempo real sem esperar resposta manual</span>
+    </article>
+    <article class="card-info">
+      <strong>10% OFF no Combo</strong>
+      <span>Desconto automático ao combinar 2 ou mais soluções avulsas</span>
+    </article>
+    <article class="card-info">
+      <strong>Sob Medida</strong>
+      <span>Estrutura, textos e regras ajustados à realidade da sua operação</span>
+    </article>
+  </section>
+
+  <!-- =====================================================================
+       4. COMO FUNCIONA (JORNADA EM 3 ETAPAS)
+       ===================================================================== -->
+  <section id="como-funciona" class="secao-passos container">
+    <div class="cabecalho-secao">
+      <span class="eyebrow">Processo Simples</span>
+      <h2>Como funciona na prática</h2>
+      <p>Da simulação à entrega estruturada em três passos objetivos:</p>
+    </div>
+
+    <div class="grid-passos">
+      <article class="card-passo">
+        <span class="numero-passo">01</span>
+        <h3>Monte seu escopo</h3>
+        <p>Escolha um pacote pronto ou marque apenas os serviços avulsos que fazem sentido agora.</p>
+      </article>
+
+      <article class="card-passo">
+        <span class="numero-passo">02</span>
+        <h3>Envie pelo WhatsApp</h3>
+        <p>O simulador organiza os itens, calcula o valor e gera a mensagem pronta para envio ou cópia.</p>
+      </article>
+
+      <article class="card-passo">
+        <span class="numero-passo">03</span>
+        <h3>Alinhamento e entrega</h3>
+        <p>Validamos os detalhes da sua rotina e entregamos a solução pronta para uso no dia a dia.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       5. SIMULADOR INTERATIVO DE ORÇAMENTO
+       ===================================================================== -->
+  <main id="simulador" class="container simulador-box">
+    <div class="topo-simulador">
+      <div>
+        <span class="eyebrow">Orçamento Interativo</span>
+        <h2>1. Escolha um pacote ou monte seu combo</h2>
+        <p class="subtitulo">Clique em um pacote pronto ou marque os serviços desejados abaixo:</p>
+      </div>
+      <button type="button" id="btn-limpar" class="btn-limpar">Limpar seleção</button>
+    </div>
+
+    <!-- Pacotes prontos -->
+    <div class="bloco-pacotes">
+      <span class="label-campo">Pacotes prontos</span>
+      <div class="grid-pacotes" role="group" aria-label="Pacotes prontos de serviços">
+        <button
+          type="button"
+          class="card-pacote"
+          data-pacote="Pacote Essencial"
+          data-servicos="Planilha Inteligente de Controle|Organização de Agenda e Fluxo"
+          data-preco-pacote="290"
+        >
+          <span class="tag-pacote">Organização</span>
+          <strong>Pacote Essencial</strong>
+          <small>Planilha Inteligente + Agenda e Fluxo</small>
+          <span class="preco-pacote">R$ 290</span>
+        </button>
+
+        <button
+          type="button"
+          class="card-pacote"
+          data-pacote="Pacote Presença & Vendas"
+          data-servicos="Página Interativa com Simulador|Planilha Inteligente de Controle"
+          data-preco-pacote="470"
+        >
+          <span class="tag-pacote">Mais pedido</span>
+          <strong>Pacote Presença & Vendas</strong>
+          <small>Página com Simulador + Planilha Inteligente</small>
+          <span class="preco-pacote">R$ 470</span>
+        </button>
+
+        <button
+          type="button"
+          class="card-pacote"
+          data-pacote="Pacote Operação Completa"
+          data-servicos="Página Interativa com Simulador|Planilha Inteligente de Controle|Organização de Agenda e Fluxo"
+          data-preco-pacote="620"
+        >
+          <span class="tag-pacote">Completo</span>
+          <strong>Pacote Operação Completa</strong>
+          <small>Página + Planilha + Agenda e Fluxo</small>
+          <span class="preco-pacote">R$ 620</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Serviços avulsos -->
+    <div class="lista-servicos" role="group" aria-label="Lista de serviços disponíveis">
+      <span class="label-campo">Serviços avulsos</span>
+
+      <label class="item-servico">
+        <input
+          type="checkbox"
+          class="servico-check"
+          data-nome="Página Interativa com Simulador"
+          data-preco="350"
+        >
+        <div class="servico-texto">
+          <strong>Página Interativa com Simulador</strong>
+          <small>Landing page responsiva + cálculo automático + integração direta com WhatsApp</small>
+        </div>
+        <span class="preco">R$ 350</span>
+      </label>
+
+      <label class="item-servico">
+        <input
+          type="checkbox"
+          class="servico-check"
+          data-nome="Planilha Inteligente de Controle"
+          data-preco="180"
+        >
+        <div class="servico-texto">
+          <strong>Planilha Inteligente de Controle</strong>
+          <small>Gestão visual de vendas, estoque, precificação ou fluxo de caixa automatizado</small>
+        </div>
+        <span class="preco">R$ 180</span>
+      </label>
+
+      <label class="item-servico">
+        <input
+          type="checkbox"
+          class="servico-check"
+          data-nome="Organização de Agenda e Fluxo"
+          data-preco="150"
+        >
+        <div class="servico-texto">
+          <strong>Organização de Agenda e Fluxo</strong>
+          <small>Padronização de horários, scripts de atendimento e cadastro de clientes</small>
+        </div>
+        <span class="preco">R$ 150</span>
+      </label>
+
+      <label class="item-servico">
+        <input
+          type="checkbox"
+          class="servico-check"
+          data-nome="Manutenção e Ajustes Mensais"
+          data-preco="120"
+        >
+        <div class="servico-texto">
+          <strong>Manutenção e Ajustes Mensais</strong>
+          <small>Atualização contínua de preços, textos, melhorias e suporte técnico</small>
+        </div>
+        <span class="preco">R$ 120</span>
+      </label>
+    </div>
+
+    <!-- Prazo / urgência -->
+    <div class="bloco-prazo">
+      <label for="prazo-entrega"><strong>2. Prazo de entrega desejado</strong></label>
+      <select id="prazo-entrega">
+        <option value="padrao">Prazo Padrão — 5 a 7 dias úteis (sem acréscimo)</option>
+        <option value="prioritario">Entrega Prioritária — até 48h úteis (+20%)</option>
+      </select>
+    </div>
+
+    <!-- Resumo financeiro detalhado -->
+    <div class="resumo-orcamento" aria-live="polite">
+      <p id="aviso-desconto" class="aviso-combo">
+        Escolha um pacote pronto ou marque 2+ serviços avulsos para 10% OFF!
+      </p>
+
+      <div class="detalhes-valores">
+        <div class="linha-detalhe">
+          <span>Subtotal:</span>
+          <span id="valor-subtotal">R$ 0,00</span>
+        </div>
+        <div class="linha-detalhe destaque-desconto">
+          <span>Desconto combo (10%):</span>
+          <span id="valor-desconto">- R$ 0,00</span>
+        </div>
+        <div class="linha-detalhe">
+          <span>Adicional de prioridade:</span>
+          <span id="valor-prioridade">R$ 0,00</span>
+        </div>
+      </div>
+
+      <div class="linha-total">
+        <span>Total estimado:</span>
+        <strong id="valor-total">R$ 0,00</strong>
+      </div>
+    </div>
+
+    <!-- Formulário e prévia ao vivo -->
+    <form id="form-agendamento" class="form-agendamento" novalidate>
+      <h2>3. Seus dados e prévia da mensagem</h2>
+
+      <div class="grid-inputs">
+        <div>
+          <label for="nome-cliente" class="label-campo">Seu nome ou nome do negócio</label>
+          <input
+            type="text"
+            id="nome-cliente"
+            placeholder="Ex.: Studio Ana Beleza"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="turno-preferencia" class="label-campo">Melhor horário para contato</label>
+          <select id="turno-preferencia">
+            <option value="Manhã (09h às 12h)">Manhã (09h às 12h)</option>
+            <option value="Tarde (13h às 18h)">Tarde (13h às 18h)</option>
+            <option value="Flexível">Horário Flexível</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="previa-box">
+        <div class="previa-topo">
+          <span>Prévia da mensagem do WhatsApp</span>
+          <button type="button" id="btn-copiar" class="btn-copiar">Copiar texto</button>
+        </div>
+        <pre id="previa-mensagem" class="previa-texto">Escolha um pacote ou selecione pelo menos um serviço para visualizar a mensagem...</pre>
+      </div>
+
+      <p id="mensagem-feedback" class="mensagem-feedback" role="alert"></p>
+
+      <button type="submit" id="btn-whatsapp" class="btn-whatsapp">
+        Enviar pedido pelo WhatsApp
+      </button>
+    </form>
+  </main>
+
+  <!-- =====================================================================
+       6. PERGUNTAS FREQUENTES (FAQ)
+       ===================================================================== -->
+  <section id="faq" class="secao-faq container">
+    <div class="cabecalho-secao">
+      <span class="eyebrow">Transparência</span>
+      <h2>Dúvidas Frequentes</h2>
+    </div>
+
+    <div class="lista-faq">
+      <details class="item-faq" open>
+        <summary>Posso personalizar as cores, serviços e preços para o meu negócio?</summary>
+        <p>Sim. Na Kora, toda a estrutura é adaptada com a sua identidade visual, catálogo de serviços, regras de desconto e número oficial de WhatsApp.</p>
+      </details>
+
+      <details class="item-faq">
+        <summary>Preciso pagar mensalidade para manter a página no ar?</summary>
+        <p>Não necessariamente. A página pode ser hospedada em estrutura estática gratuita ou no seu domínio próprio, e o plano mensal é totalmente opcional.</p>
+      </details>
+
+      <details class="item-faq">
+        <summary>Funciona bem no celular dos meus clientes?</summary>
+        <p>Sim. O projeto é desenvolvido com abordagem Mobile-First, garantindo leitura confortável e botões fáceis de tocar em qualquer smartphone.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       7. RODAPÉ INSTITUCIONAL
+       ===================================================================== -->
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Kora | Sistemas Personalizados</strong></p>
+      <p>Soluções digitais e organização operacional • Projeto desenvolvido com HTML5, CSS3 e TypeScript</p>
+    </div>
+  </footer>
+
+  <!-- Bundle JavaScript gerado pela compilação do TypeScript -->
+  <script src="dist/script.js"></script>
+</body>
+</html>
